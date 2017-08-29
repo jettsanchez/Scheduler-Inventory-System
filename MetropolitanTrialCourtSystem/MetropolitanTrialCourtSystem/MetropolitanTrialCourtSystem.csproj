@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{97100E53-A4AA-4C98-8740-D6D959F876C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MetropolitanTrialCourtSystem</RootNamespace>
+    <AssemblyName>MetropolitanTrialCourtSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>supremecourt.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.4, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Bunifu_UI_v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.9.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Visual Studio 2013\Projects\SemestralGrade_System\SemestralGrade_System\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNature.Designer.cs">
+      <DependentUpon>AddNature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddJudge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddJudge.Designer.cs">
+      <DependentUpon>AddJudge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckCaseNo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckCaseNo.Designer.cs">
+      <DependentUpon>CheckCaseNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CriminalCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CriminalCase.Designer.cs">
+      <DependentUpon>CriminalCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CivilCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CivilCase.Designer.cs">
+      <DependentUpon>CivilCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBUtilities.cs" />
+    <Compile Include="FORM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FORM.Designer.cs">
+      <DependentUpon>FORM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformationSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationSheet.Designer.cs">
+      <DependentUpon>InformationSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertDateofHearing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertDateofHearing.Designer.cs">
+      <DependentUpon>InsertDateofHearing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertDateofHearings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertDateofHearings.Designer.cs">
+      <DependentUpon>InsertDateofHearings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manageaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manageaccount.Designer.cs">
+      <DependentUpon>Manageaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MYSQLConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MYSQLConnection.Designer.cs">
+      <DependentUpon>MYSQLConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenCase.Designer.cs">
+      <DependentUpon>OpenCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenSearching.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenSearching.Designer.cs">
+      <DependentUpon>OpenSearching.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Responsive.cs" />
+    <Compile Include="Updateaccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Updateaccount.Designer.cs">
+      <DependentUpon>Updateaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Useraccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Useraccount.Designer.cs">
+      <DependentUpon>Useraccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewUser.Designer.cs">
+      <DependentUpon>ViewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfo.Designer.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewingofCivilCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewingofCivilCase.Designer.cs">
+      <DependentUpon>ViewingofCivilCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewingofCriminalCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewingofCriminalCase.Designer.cs">
+      <DependentUpon>ViewingofCriminalCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewingofInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewingofInformation.Designer.cs">
+      <DependentUpon>ViewingofInformation.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddNature.resx">
+      <DependentUpon>AddNature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddJudge.resx">
+      <DependentUpon>AddJudge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckCaseNo.resx">
+      <DependentUpon>CheckCaseNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CivilCase.resx">
+      <DependentUpon>CivilCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CriminalCase.resx">
+      <DependentUpon>CriminalCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FORM.resx">
+      <DependentUpon>FORM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationSheet.resx">
+      <DependentUpon>InformationSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertDateofHearing.resx">
+      <DependentUpon>InsertDateofHearing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertDateofHearings.resx">
+      <DependentUpon>InsertDateofHearings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manageaccount.resx">
+      <DependentUpon>Manageaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MYSQLConnection.resx">
+      <DependentUpon>MYSQLConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenCase.resx">
+      <DependentUpon>OpenCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenSearching.resx">
+      <DependentUpon>OpenSearching.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updateaccount.resx">
+      <DependentUpon>Updateaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Useraccount.resx">
+      <DependentUpon>Useraccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ViewUser.resx">
+      <DependentUpon>ViewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfo.resx">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewingofCivilCase.resx">
+      <DependentUpon>ViewingofCivilCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewingofCriminalCase.resx">
+      <DependentUpon>ViewingofCriminalCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewingofInformation.resx">
+      <DependentUpon>ViewingofInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="supremecourt.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
